@@ -8,10 +8,10 @@
         <relativePath>../service-parent</relativePath>
     </parent>
     <artifactId>hazelcast-client</artifactId>
-    <version>1.4-SNAPSHOT</version>
+    <version>1.4</version>
     <properties>
         <version.hazelcast-kubernetes>1.1.0</version.hazelcast-kubernetes>
-        <version.microservice.hazelcast>1.3</version.microservice.hazelcast>
+        <version.microservice.hazelcast>1.4</version.microservice.hazelcast>
     </properties>
     <dependencyManagement>
         <dependencies>
