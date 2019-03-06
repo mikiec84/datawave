@@ -278,6 +278,10 @@ public class QueryImpl extends Query implements Serializable, Message<QueryImpl>
         return maxResultsOverride;
     }
     
+    public boolean isMaxResultsOverridden() {
+        return isMaxResultsOverridden;
+    }
+    
     public Set<Parameter> getParameters() {
         return parameters == null ? null : Collections.unmodifiableSet(parameters);
     }
@@ -313,10 +317,6 @@ public class QueryImpl extends Query implements Serializable, Message<QueryImpl>
     public void setMaxResultsOverride(long maxResults) {
         this.maxResultsOverride = maxResults;
         this.isMaxResultsOverridden = true;
-    }
-    
-    public boolean isMaxResultsOverridden() {
-        return false;
     }
     
     public void setPagesize(int pagesize) {
